@@ -3,9 +3,14 @@
     src: url(../fonts/Sansation_Regular.ttf);
 }
 
+*,
+*::before,
+*::after {
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Poppins", "DM Sans", sans-serif;
-    overflow-x: hidden;
 }
 
 html {
@@ -815,6 +820,7 @@ td {
 
 .imgWithSvg {
     position: relative;
+    overflow-y: hidden;
 }
 
 .imgWithSvgReverse {
