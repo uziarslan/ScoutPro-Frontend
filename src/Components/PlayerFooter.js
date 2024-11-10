@@ -3,7 +3,7 @@ import logoBlack from "../assets/images/logo_black.png";
 
 export default function PlayerFooter() {
   return (
-    <footer className="container">
+    <footer className="max-width mx-auto">
       <div className="innerContainer">
         <div className="row g-4 align-items-center">
           <div className="col-12 col-sm-6 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center">

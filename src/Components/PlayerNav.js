@@ -62,7 +62,7 @@ export default function PlayerNav({ player, requestPdf }) {
   return (
     <nav className="navbar fixed-top navbar-expand-lg">
       <div className="container-fluid max-width">
-        <Link className="navbar-brand" to="/dashboard">
+        <Link className="navbar-brand m-0" to="/dashboard">
           <img
             id="logoWhite"
             src={logoWhite}

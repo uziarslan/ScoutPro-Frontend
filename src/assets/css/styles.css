@@ -717,7 +717,7 @@ td {
     flex-direction: column;
     justify-content: center;
     gap: 77px;
-    padding: 300px 0px 62px 0px;
+    padding: 258px 0px 62px 0px;
 }
 
 .heroPlayerName {
@@ -739,8 +739,8 @@ td {
     font-weight: 700;
     text-transform: uppercase;
     position: absolute;
-    top: 1px;
-    left: 4px;
+    top: 5px;
+    left: 0;
     opacity: 0.7;
     /* white-space: nowrap; */
 }
@@ -767,8 +767,8 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 414px;
 }
 
 .heroPlayerImage {
@@ -1072,6 +1072,10 @@ td {
 
     .statsWrapper {
         width: auto;
+    }
+
+    .heroImageWrapper {
+        width: 460px;
     }
 
 }
