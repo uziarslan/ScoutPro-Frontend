@@ -3,14 +3,10 @@
     src: url(../fonts/Sansation_Regular.ttf);
 }
 
-*,
-*::before,
-*::after {
-    overflow-x: hidden;
-}
 
 body {
     font-family: "Poppins", "DM Sans", sans-serif;
+    overflow-x: hidden !important;
 }
 
 html {
@@ -694,7 +690,6 @@ td {
 
 .heroSection {
     position: relative;
-    margin-top: -70px;
     overflow: hidden;
 }
 
@@ -722,7 +717,7 @@ td {
     flex-direction: column;
     justify-content: center;
     gap: 77px;
-    padding: 258px 0px 62px 0px;
+    padding: 188px 0px 62px 0px;
 }
 
 .heroPlayerName {
