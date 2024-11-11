@@ -880,7 +880,8 @@ td {
 }
 
 .pdfImage {
-    height: 400px;
+    height: 384px;
+    width: 295px;
 }
 
 .downloadPdfBtnRed {
