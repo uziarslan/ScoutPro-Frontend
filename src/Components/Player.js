@@ -67,8 +67,8 @@ export default function Player() {
         <Loading isLoading={isLoading} />
         <div className="heroBackground">
           <div className="container">
-            <div className="row align-items-center mb-5">
-              <div className="col-12 col-lg-6">
+            <div className="row align-items-center justify-content-center mb-5 customHeroTextandImage">
+              <div className="col-12 col-lg-6 w-auto">
                 <h1 className="heroPlayerName" data-text={player.playerName}>
                   {player.playerName}
                 </h1>
@@ -81,7 +81,7 @@ export default function Player() {
                   <p className="infoText">{player.position}</p>
                 </div>
               </div>
-              <div className="col-12 col-lg-6">
+              <div className="col-12 col-lg-6 width-auto">
                 <div className="heroImageWrapper">
                   <img
                     alt="Player main display"
