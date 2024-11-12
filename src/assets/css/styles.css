@@ -1095,8 +1095,4 @@ td {
     }
 }
 
-@media(min-width: 1400px) {
-    .customHeroTextandImage {
-        gap: 280px;
-    }
-}
+@media(min-width: 1400px) {}
