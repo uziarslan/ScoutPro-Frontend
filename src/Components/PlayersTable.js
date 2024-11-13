@@ -168,6 +168,26 @@ export default function PlayersTable({ players, setMessage, setIsLoading }) {
     }
   };
 
+  const handleDeletePlayer = async (id) => {
+    try {
+      const { status, data } = await axiosInstance.delete(`/player/${id}`);
+
+      if (status === 200) {
+        setMessage(data);
+        setIsLoading(false);
+        setEditPlayer({});
+        const modalElement = document.getElementById("editModal");
+        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+        modalInstance.hide();
+      }
+    } catch (error) {
+      if (error.response && error.response.data && error.response.data.error) {
+        setMessage(error.response.data);
+        setIsLoading(true);
+      }
+    }
+  };
+
   return (
     <>
       {players.length > 0 ? (
@@ -767,11 +787,11 @@ export default function PlayersTable({ players, setMessage, setIsLoading }) {
             <div className="row g-2">
               <div className="col-12 col-sm-6">
                 <button
+                  onClick={() => handleDeletePlayer(editPlayer._id)}
                   type="button"
                   className="cancelButton"
-                  data-bs-dismiss="modal"
                 >
-                  Cancel
+                  Delete
                 </button>
               </div>
               <div className="col-12 col-sm-6">
