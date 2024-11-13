@@ -774,8 +774,8 @@ td {
     margin: 0 auto;
 }
 
-.customHeroTextandImage {
-    gap: 100px;
+.navbar-brand {
+    width: 316px;
 }
 
 .heroPlayerImage {
