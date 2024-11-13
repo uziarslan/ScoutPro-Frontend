@@ -68,17 +68,19 @@ export default function Player() {
         <div className="heroBackground">
           <div className="container">
             <div className="row align-items-center justify-content-center mb-5 customHeroTextandImage">
-              <div className="col-12 col-lg-6 w-auto">
-                <h1 className="heroPlayerName" data-text={player.playerName}>
-                  {player.playerName}
-                </h1>
-                <div className="heroPlayerWrapper">
-                  <h5 className="infoHeading">Team</h5>
-                  <p className="infoText">Los Angeles Leopards</p>
-                </div>
-                <div className="heroPlayerWrapper">
-                  <h5 className="infoHeading">Position</h5>
-                  <p className="infoText">{player.position}</p>
+              <div className="col-12 col-lg-6 d-flex flex-direction-column justify-content-center">
+                <div>
+                  <h1 className="heroPlayerName" data-text={player.playerName}>
+                    {player.playerName}
+                  </h1>
+                  <div className="heroPlayerWrapper">
+                    <h5 className="infoHeading">Team</h5>
+                    <p className="infoText">Los Angeles Leopards</p>
+                  </div>
+                  <div className="heroPlayerWrapper">
+                    <h5 className="infoHeading">Position</h5>
+                    <p className="infoText">{player.position}</p>
+                  </div>
                 </div>
               </div>
               <div className="col-12 col-lg-6 width-auto">
