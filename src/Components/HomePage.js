@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logoBlack from "../assets/images/logo_black.png";
 import { Link } from "react-router-dom";
+import axiosInstance from "../Utils/axiosInstance";
 export default function HomePage() {
+  useEffect(() => {
+    const sendEmail = async () => {
+      try {
+        await axiosInstance.post("/send-email");
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    sendEmail();
+  }, []);
   return (
     <>
       <section className="container-fluid p-0 p-md-3 backgroundImage">
