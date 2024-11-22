@@ -6,7 +6,9 @@ export default function HomePage() {
   useEffect(() => {
     const sendEmail = async () => {
       try {
-        await axiosInstance.post("/send-email");
+        await axiosInstance.post(
+          "https://scoutpro-51998591ac79.herokuapp.com/api/v1/send-email"
+        );
       } catch (error) {
         console.log(error);
       }
